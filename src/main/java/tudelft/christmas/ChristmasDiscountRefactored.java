@@ -11,6 +11,8 @@ public class ChristmasDiscountRefactored {
     }
 
     public double applyDiscount(double rawAmount) {
+        if(rawAmount <=0)
+            throw new IllegalArgumentException("Price should be more than 0");
         Calendar today = clock.now();
 
         double discountPercentage = 0;
