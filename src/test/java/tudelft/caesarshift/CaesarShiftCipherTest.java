@@ -9,7 +9,7 @@ public class CaesarShiftCipherTest {
 
 
     @ParameterizedTest(name = "({0}, {1}) = {2}")
-    @CsvSource({
+    @CsvSource(value = {
             // The total is higher than the amount of small and big bars.
             "'abc', 0, 'abc'", "'abc', 26, 'abc'", "'abc', -1, 'zab'", "'abc', -3, 'xyz'", "'abc', 3, 'def'", "'xyz', 5, 'cde'",
             "'22', '1', 'invalid'", "'Qwse', '2', 'invalid'", "'', 2, 'invalid'"
